@@ -31,7 +31,7 @@
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars[2]"
+            tools:srcCompat="@tools:sample/avatars[1]"
             android:id="@+id/avatar"
             android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/profession"
@@ -47,7 +47,9 @@
             app:layout_constraintStart_toStartOf="@id/guideline_most_left"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintBaseline_toBaselineOf="@+id/followers_count"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:textStyle="bold"
+    />
 
     <TextView
             android:text="posts"
@@ -250,7 +252,14 @@
             app:layout_constraintStart_toEndOf="@id/guideline_most_left"
             app:layout_constraintTop_toBottomOf="@id/divider3"
             app:layout_constraintBottom_toTopOf="@id/divider4" android:textAlignment="center"
-            android:text="3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"/> "
-            android:layout_marginBottom="0dp"/>
+            android:text="3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"/>
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" app:srcCompat="@drawable/ic_person_add_white_24dp"
+            android:id="@+id/floatingActionButton3" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
 
 </android.support.constraint.ConstraintLayout>
