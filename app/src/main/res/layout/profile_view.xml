@@ -100,7 +100,7 @@
 
     <View
             android:id="@+id/divider2"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="?android:attr/listDivider"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -113,7 +113,7 @@
     <View
             android:id="@+id/divider3"
             android:layout_width="0dp"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:background="?android:attr/listDivider"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -224,13 +224,16 @@
 
     <TextView
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/main_text"
             app:layout_constraintEnd_toStartOf="@id/guideline_most_right"
             app:layout_constraintStart_toEndOf="@id/guideline_most_left"
-            app:layout_constraintTop_toBottomOf="@id/divider3"
-            app:layout_constraintBottom_toTopOf="@id/divider4" android:textAlignment="center"
-            android:text="3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"/>
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie. Fusce quis mauris a enim sollicitudin"
+            app:layout_constraintTop_toBottomOf="@+id/divider3" app:layout_constraintBottom_toTopOf="@+id/divider4"
+            android:textColor="@android:color/black"/>
+
     <android.support.design.widget.FloatingActionButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -242,6 +245,29 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
             app:backgroundTint="@color/colorSecondary"/>
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+
+            app:srcCompat="@drawable/ic_phone_green_24dp"
+            android:id="@+id/phone_icon"
+            app:layout_constraintTop_toTopOf="@+id/avatar"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            android:layout_marginLeft="24dp"
+    />
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            app:srcCompat="@drawable/ic_chat_black_24dp"
+            android:id="@+id/chan_icon"
+            app:layout_constraintTop_toTopOf="@+id/avatar"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar"
+            app:layout_constraintEnd_toStartOf="@+id/avatar"
+            android:layout_marginRight="24dp"
+    />
 
 
 </android.support.constraint.ConstraintLayout>
